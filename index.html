@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="all.min.js"></script>
+    <script src="moment.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+      <div id="header">
+          <div class="flex4">
+           <a href="#"><img
+            src="https://codingui.dev/images/logo.png"
+            alt=""
+            class="flex4-logo"
+          /></a>
+            <ul class="flex4-menu">
+                <li class="a">
+                    <a  href="#weather">Home</a>
+                  </li>
+                <li class="a">
+                <a  href="#weather">Weather</a>
+              </li>
+              <li class="a">
+                <a   href="#time">Time</a>
+              </li>
+              <li class="a">
+                <a  href="#map">Map</a>
+              </li>
+              <li>
+                <a href="#news">News</a>
+              </li>
+            </ul>
+            
+            <a href="http://vlxx.com" class="flex4-join" >Join now</a>
+            <div id="mobile-bar" class="mobile-bar">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+          </div>
+      </div>
+             
+      <div id="overview"  class="container">
+        
+    
+        <div id="weather" class="container2">
+            <div class="main-section">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="search-city" id="search-input" placeholder="  Tìm kiếm thành phố...">
+                    <span class="microphone">
+                        <i class="fas fa-microphone"></i>
+                        <span class="recording-icon"></span>
+                    </span>
+                </div>
+                <div class="info-wrapper">
+                    <p class="city-name">--</p>
+                    <p class="weather-state">--</p>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+                    <p class="temperature">--</p>
+                </div>
+            </div>
+            
+            <div class="additional-section">
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Mặt Trời Mọc</div>
+                        <div class="value sunrise">--</div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Mặt Trời Lặn</div>
+                        <div class="value sunset">--</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Độ Ẩm</div>
+                        <div class="value"><span class="humidity">--</span>%</div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Tốc Độ Gió</div>
+                        <div class="value"><span class="wind-speed">--</span> km/h</div>
+                    </div>
+                   
+                    
+                </div>
+                <div class="lon">
+                        
+                </div>
+                <div class="lat">
+                    
+                </div>
+            </div>
+      
+        </div>
+        <div id="time" class=" container2">
+            <div id="dong_ho">
+                <h2>Thời gian bây giờ:</h2>
+                <div class="time" id="thoi_gian">                
+                    <div class="a">  
+                        <span  class="top" id="gio">00</span><span class="bot" >Giờ</span>
+                    </div>
+                    <div>
+                          <span class="top" id="phut">00</span><span class="bot">Phút</span>
+                    </div>
+                    <div>
+                        <span class="top" id="giay">00</span><span class="bot">Giây</span>
+                    </div>
+                </div>
+                <h2>Hôm nay là ngày:</h2>
+                <div class="time" id="ngay_thang">
+                    <div class="a">  
+                        <span class="top" id="ngay">00</span><span class="bot">Ngày</span>
+                    </div>
+                    <div>
+                          <span class="top" id="thang">00</span><span class="bot">Tháng</span>
+                    </div>
+                    <div>
+                        <span class="top" id="nam">0000</span><span class="bot">Năm</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="map" class="container2">
+            <div class="slideshow-container">
+                <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                 <div class="mySlides fade">
+                   <div class="numbertext">1 / 3</div>
+                   <img src="images/gio.PNG" >
+                   <div class="text">Bản Đồ Gió</div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">2 / 3</div>
+                   <img src="images/mua.PNG">
+                   <div class="text">Bản Đồ Mưa</div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">3 / 3</div>
+                   <img src="images/may.PNG">
+                   <div class="text">Bản Đồ Mây</div>
+                 </div>
+                <!-- Nút điều khiển mũi tên-->
+                 <a class="prev" onclick="plusSlides(-1)">❮</a>
+                 <a class="next" onclick="plusSlides(1)">❯</a>
+                 <div id="dot" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+               </div>
+               <br>
+              <!-- Nút tròn điều khiển slideshow-->
+               <!-- <div id="dot" style="text-align:center">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+               </div> -->
+        </div>
+      </div>
+      
+      <!-- <iframe width="100%" height="500px" src="https://www.windy.com/vi/-Ca%CC%89nh-ba%CC%81o-th%C6%A1%CC%80i-ti%C3%AA%CC%81t-capAlerts?capAlerts,-14.954,122.168,3" frameBorder="0"></iframe> -->
+      <div id="news" class="container4">
+        
+        <div class="container5">
+            <div class="current-info">
+                
+                <div class="today" id="current-temp">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="other">
+                       
+                    </div>
+                </div>
+
+                <div class="date-container">
+                    <div class="others" id="current-weather-items">
+                    </div>
+
+                </div>
+
+                <div class="date-container1">
+                    <div class="time-zone" id="time-zone">--</div>
+                    <div id="country" class="country">--</div>
+                   
+                </div>    
+                
+            </div>
+
+            
+        </div>
+        
+        <div class="future-forecast">
+    
+            <div class="weather-forecast" id="weather-forecast" >
+               
+                
+            </div>
+            
+        </div>
+      
+    </div>
+    
+   
+      <div class="footer">
+        <div class="sm">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </div>
+    <!-- <h3>Tạo slideshow bằng HTML Và CSS</h3>
+    <div id="slideshow">
+      <div class="slide-wrapper">
+        <div class="slide"><img src="https://images.pexels.com/photos/2382325/pexels-photo-2382325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+        <div class="slide"><img src="https://images.pexels.com/photos/3578393/pexels-photo-3578393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+        <div class="slide"><img src="https://images.pexels.com/photos/4484184/pexels-photo-4484184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+      </div>
+    </div> -->
+    <script src="style.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
