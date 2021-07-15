@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Bức xạ tia cực tím ở nhiều nơi ở mức gây hại rất cao",
+      "content": "Theo Trung tâm Dự báo Khí tượng Thủy văn Quốc gia, ngày 13/7, chỉ số tia cực tím (UV) tại nhiều tỉnh, thành phố trên cả nước đều ở mức 8-9, mức có nguy cơ gây hại rất cao. Riêng tại các thành phố thuộc khu vực Đông Bắc Bộ như Hạ Long (Quảng Ninh), Hải Phòng chỉ số UV cực đại chỉ khoảng mức 7, mức có nguy cơ gây hại cao.",
+      "menuId": 1,
+      "img": "https://cdnmedia.baotintuc.vn/Upload/DmtgOUlHWBO5POIHzIwr1A/files/2021/06/12/cuc-tim-120621.jpg",
+      "link": "https://baotintuc.vn/xa-hoi/buc-xa-tia-cuc-tim-o-nhieu-noi-o-muc-gay-hai-rat-cao-20210713094921507.htm"
+    },
+    {
+      "id": 2,
+      "title": "Chủ tịch nước Nguyễn Xuân Phúc tiếp các Đại sứ đến trình Quốc thư",
+      "content": "Sáng 13/7/2021, tại Phủ Chủ tịch, Chủ tịch nước Nguyễn Xuân Phúc tiếp các Đại sứ Thái Lan, Đại sứ Liên bang Nga, Đại sứ Cộng hoà Cuba đến trình Quốc thư.",
+      "menuId": 1,
+      "img": "https://cdnmedia.baotintuc.vn/Upload/OND64xLJqhpDJlQ2Gd1dpw/files/2021/07/dai-su-nga-13721.jpg",
+      "link": "https://baotintuc.vn/chinh-tri/chu-tich-nuoc-nguyen-xuan-phuc-tiep-cac-dai-su-den-trinh-quoc-thu-20210713092941534.htm"
+    },
+    {
+      "id": 3,
+      "title": "‘Cánh tay Covid’ - triệu chứng vô hại sau tiêm vaccine Moderna ",
+      "content": "Hiện tượng sưng ngứa, phát ban cánh tay sau tiêm vaccine Moderna, còn gọi là “cánh tay Covid”, gây khó chịu song vô hại, sẽ biến mất trong vài ngày.",
+      "menuId": 1,
+      "img": "https://i1-suckhoe.vnecdn.net/2021/07/12/5979f6f0-a0e9-4e97-976a-355ef4-2004-4847-1626076179.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=iQXDmYv0N6A6OXiNx0BudA",
+      "link": "https://vnexpress.net/canh-tay-covid-trieu-chung-vo-hai-sau-tiem-vaccine-moderna-4308293.html"
+    },
+    {
+      "id": 4,
+      "title": "Quân đội điều 3 ôtô đưa 150 lao động về quê",
+      "content": "Chủ rẫy thuê 3 ôtô chỗ người làm về nhưng không được phép chạy liên tỉnh, khi phát hiện, quân đội Khánh Hòa đã điều thêm 3 xe chở họ về Quảng Ngãi.",
+      "menuId": 1,
+      "img": "https://i1-vnexpress.vnecdn.net/2021/07/13/Ngidnlnxevqu-1626151687-6385-1626153276.jpg?w=120&h=72&q=100&dpr=2&fit=crop&s=Qu6jM0Iqlv3bvi6LaNyMDw",
+      "link": "https://vnexpress.net/quan-doi-dieu-3-oto-dua-150-lao-dong-ve-que-4308760.html"
+    },
+    {
+      "id": 5,
+      "title": "Hà Nội: Nhiều người vẫn ra đường tập thể dục bất chấp lệnh cấm",
+      "content": "Để phục vụ công tác phòng, chống dịch COVID-19, từ 0h ngày 13/7, Hà Nội dừng tất cả hoạt động kinh doanh dịch vụ không thiết yếu: Các cửa hàng cắt tóc, gội đầu; nhà hàng, cơ sở dịch vụ ăn, uống tại chỗ (chỉ cho phép bán hàng mang về).Thực hiện dừng triệt để hoạt động vui chơi, tập thể dục, tụ tập đông người tại công viên, vườn hoa và các địa điểm công cộng.",
+      "menuId": 1,
+      "img": "https://cdnthumb.baotintuc.vn/ha_w/600/https@@$$media.baotintuc.vn/Upload/a7srThwxbojBCucvUWgnxA/files/2021/07/13/ha-noi/Ha-noi-10720212123.jpeg",
+      "link": "https://baotintuc.vn/anh/ha-noi-nhieu-nguoi-van-ra-duong-tap-the-duc-bat-chap-lenh-cam-20210713081926583.htm"
+    },
+    {
+      "title": "Hà Nội lập 22 chốt tại các cửa ngõ, test nhanh COVID-19 và kiểm tra giấy xét nghiệm âm tính",
+      "content": "Hà Nội sẽ có 22 chốt kiểm soát người, phương tiện ra vào Thủ đô tại các cửa ngõ, đường nhánh... để phòng, chống dịch COVID-19.",
+      "img": "https://cdn.24h.com.vn/upload/3-2021/images/2021-07-12/Ha-Noi-lap-22-chot-tai-cac-cua-ngo-test-nhanh-COVID-19-va-kiem-tra-giay-xet-nghiem-am-tinh-anh-1-1626101229-387-width2048height1364.jpeg",
+      "link": "https://www.24h.com.vn/tin-tuc-trong-ngay/ha-noi-lap-22-chot-tai-cac-cua-ngo-test-nhanh-covid-19-va-kiem-tra-giay-xet-nghiem-am-tinh-c46a1269939.html",
+      "menuId": 1,
+      "id": 6
+    },
+    {
+      "title": "Đồng Nai triển khai kế hoạch 1.500 giường bệnh cùng 100 giường hồi sức cấp cứu điều trị bệnh nhân nặng",
+      "content": "Lãnh đạo Sở Y tế tỉnh Đồng Nai cho biết sẽ thiết lập 100 giường hồi sức cấp cứu điều trị cho bệnh nhân nặng (Bệnh viện ĐK Đồng Nai và Bệnh viện ĐK Thống Nhất mỗi đơn vị 50 giường); đồng thời đang gấp rút chuẩn bị thêm các cơ sở điều trị bệnh nhân COVID-19 với quy mô 1.500 giường bệnh trên toàn tỉnh.",
+      "img": "https://media.suckhoedoisong.vn/Images/trongnguyen/2021/07/13/BV%20PHOI.jpg",
+      "link": "https://ncov.moh.gov.vn/en/web/guest/-/6847426-5681",
+      "menuId": 1,
+      "id": 7
+    }
+  ],
+  "news": [],
+  "menu": [],
+  "subMenu": []
+}

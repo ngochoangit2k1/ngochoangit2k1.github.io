@@ -342,10 +342,10 @@ a {
     text-transform: uppercase;
 }
 #dong_ho #thoi_gian div:last-child span {
-    background: #ff0082cc;
+    background: #f47446;
 }
 #dong_ho #thoi_gian div:last-child span:nth-child(2) {
-    background: #ec0062;
+    background: #f66519;
 }
 #dong_ho .a {
     margin-left: 200px;

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/newsmore.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="img-logo">
+                <img src="https://codingui.dev/images/logo.png" alt="" class="img">
+                <p class="main-title">NEWS</p>
+            </div>
+            <a href="#" class="flex4-join" >Join now</a>
+        </div>
+        <div class="page-body">
+            <div class="page-body-left">
+                <div class="chua-tin">
+                    <h4 id="title">Gần đây</h4>
+                    <a href="#" class="more-news">Xem thêm</a>
+                    <div class = "page-body-left-current"></div>
+                    <script src="js/news1.js"></script>
+                </div>
+            </div> 
+            <div class="page-body-right">
+                <div class="page-body-right-quangcao">
+                    <img alt="" id = "quangcao">
+                </div>
+                <script>
+                    var quangcao = document.querySelector('#quangcao');
+                    var count  = 0;
+                    setInterval(function(){
+                        if(count===0){
+                            quangcao.src="assets/qc1.jpg"
+                            count++;
+                        }
+                        else{
+                            quangcao.src="assets/qc2.jpg"
+                            count--;
+                        }
+                    },500)
+                </script>
+            </div> 
+            <div class="news-more">
+                <div class="chua-card"></div>
+                <span class="left"  onclick="HandleLeft()">❮</span>
+                <span class="right" onclick="HandleRight()">❯</span>
+            </div>
+            <div class="news-more1">
+                <div class="chua-tin">
+                    <h4 id="title">Cập nhật</h4>
+                    <a href="#" class="more-news">Xem thêm</a>
+                </div>
+                
+                <div class="more-cards-news"></div>
+            </div>
+        </div>
+        <footer id="footer">
+        </footer>
+        <!-- <iframe src="https://data.opendevelopmentmekong.net/en/maps/covid19/embed" title="W3Schools Free Online Web Tutorials" width = "100%" height = "800px"></iframe> -->
+    </div>
+</body>
+</html>

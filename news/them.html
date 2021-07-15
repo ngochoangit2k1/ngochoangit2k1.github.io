@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chèn thêm news</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/them.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="img-logo">
+            <img src="https://codingui.dev/images/logo.png" alt="" class="img">
+            <p class="main-title">INSERT</p>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body-menu">
+            <ul class="body-menu-ul">
+                <li class="body-menu-item" >Các chức năng<span id = "span" onclick="hieuung()">►</span>
+                    <ul class = "sub-menu" >
+                        <li class="sub-menu-item" onclick = "insertNews(0)">Thêm</li>
+                        <li class="sub-menu-item" onclick = "updateNews(1)">Sửa</li>
+                        <li class="sub-menu-item" onclick = "deleteNews(2)">Xóa</li>
+                    </ul>
+                </li>
+                <li class="body-menu-item">Chờ thêm tính năng<span id = "span"></span></li>
+                <li class="body-menu-item">Chờ thêm tính năng<span id = "span"></span></li>
+                <li class="body-menu-item">Chờ thêm tính năng<span id = "span"></span></li>
+                <li class="body-menu-item">Chờ thêm tính năng<span id = "span"></span></li>
+                <li class="body-menu-item">Chờ thêm tính năng<span id = "span"></span></li>
+            </ul>
+            <script>
+                var count = true;
+                function hieuung(){
+                    var dis = document.querySelector('.sub-menu');
+                    var span = document.querySelector('#span');
+                    if(count){
+                        span.innerHTML = '▼'
+                        dis.style.display = 'block';
+                        count = false;
+                    }
+                    else{
+                        span.innerHTML = '►'
+                        dis.style.display = 'none';
+                        count = true;
+                    }
+                }
+            </script>
+        </div>
+        <div class="body-insert">
+            <h2>Cập nhật thêm Tin Tức</h2>
+            <div class="trong">
+                <label for="title">Tiêu đề</label>
+                <input type="text" id="title" name="title" placeholder="Title">
+                <label for="content">Nội chung đầu</label>
+                <textarea id="content" placeholder="Nhập nội dung văn bản" name="content"></textarea>
+                <label for="image">Link Image</label>
+                <input type="text" id="image" name="image" placeholder="image">
+                <label for="link">Link Page</label>
+                <input type="text" id="link" name="link" placeholder="web page">
+                <button id="btn-print">Nhập</button>
+            </div>
+        </div>
+        <div class="body-delete">
+
+        </div>
+    </div>
+    <script>
+        var api = "http://localhost:3000/posts";
+        function start(){
+            handleCreateForm();
+        }
+        start();
+        function getApi(callback) {
+            fetch(api)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(callback)
+        }
+        
+        //xử lí tạo thêm
+        function handleCreateForm(){
+            var createBtn = document.querySelector("#btn-print");
+            createBtn.onclick = function(){
+                var title = document.querySelector('#title').value;
+                var content = document.querySelector('#content').value;
+                var image = document.querySelector('#image').value;
+                var link = document.querySelector('#link').value;
+
+                console.log(title)
+                console.log(content)
+                console.log(image)
+                console.log(link)
+
+                if(title==='' || content==='' || image==='' || link===''){
+                    alert('không được để trống Tên và Comment');
+                    return;
+                }
+
+                var formData = {
+                    title : title,
+                    content: content,
+                    img: image,
+                    link: link,
+                    menuId: 1
+                }
+                createCourse(formData, function(){
+                    console.log('Finish!!!')
+
+                });
+
+            }
+        }
+        //create 
+        function createCourse(data, callback){
+            var options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                    // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: JSON.stringify(data)
+            };
+
+            fetch(api,options)
+                .then(function(response){
+                    response.json();
+                })
+                .then(callback);
+        }
+
+    </script>
+</body>
+
+</html>
