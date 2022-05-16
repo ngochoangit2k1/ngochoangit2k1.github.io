@@ -119,9 +119,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .future-forecast{
-    margin: 0 auto;
+
+    margin-top: 0 auto;
 }
 /* animation: */
 #future-forecast {
@@ -277,6 +279,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
     .future-forecast{
         margin: 0 auto;
